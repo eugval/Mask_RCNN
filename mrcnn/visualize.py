@@ -250,7 +250,7 @@ def save_instances(image,save_path, boxes, masks, class_ids, class_names,
             ax.add_patch(p)
     ax.imshow(masked_image.astype(np.uint8), interpolation='nearest')
     plt.axis("off")
-    plt.savefig(save_path , bbox_inches='tight', pad_inches = 0)
+    plt.savefig(save_path , bbox_inches='tight')
     plt.close()
 
 
